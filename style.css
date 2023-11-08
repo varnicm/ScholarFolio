@@ -1,0 +1,18 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+nav {
+    box-shadow: 8px 0px 8px 0px rgba(0,0,0,.6) !important;
+  }
+.card {
+    border:0 !important
+}
+.footer {
+    flex-shrink: 0 !important;
+  }
