@@ -7,11 +7,23 @@ body {
   display: flex;
   flex-direction: column;
 }
-nav {
-    box-shadow: 8px 0px 8px 0px rgba(0,0,0,.6) !important;
-  }
+
+main {
+    min-height:100vh
+}
+.site-title {
+    padding:30px 0px;
+    text-align: center;
+}
+#masthead {
+    background-color: #103c6d;
+}
+
 .card {
     border:0 !important
+}
+.card-post {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.08), 0 6px 20px 0 transparent;
 }
 .footer {
     flex-shrink: 0 !important;

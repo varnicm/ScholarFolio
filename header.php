@@ -11,9 +11,9 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class("bg-secondary-subtle"); ?>>
-    <header id="masthead" class="site-header" role="banner">
-        <div class="site-branding container">
+<body <?php body_class(""); ?>>
+    <header id="masthead" class="site-header container" role="banner">
+        <div class="site-branding container-fluid">
             <?php
             if ( is_front_page() && is_home() ) : ?>
                 <h1 class="site-title">
@@ -38,7 +38,7 @@
         </div><!-- .site-branding -->
 
         <!-- <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation"> -->
-        <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark" role="navigation">
+        <nav class="navbar navbar-dark navbar-expand-md border-body" role="navigation">
 
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->

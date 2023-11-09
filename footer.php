@@ -1,8 +1,7 @@
-<footer class="footer mt-auto py-3 bg-body-tertiary">
-    <div class="container ">
+<footer class="container footer mt-auto bg-body-tertiary">
         <div class="row">
             
-  <div class="col-md-2 contact-info">
+  <div class="col-md-2 contact-info py-3">
     <h3>Contact Information</h4>
     <p>[Your Full Name]</p>
     <p><a href="mailto:[Your Email]">[Your Email]</a></p>
@@ -51,7 +50,6 @@
   </div>
 
   </div>
-</div>
 </footer>
 
 
