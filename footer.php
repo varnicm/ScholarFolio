@@ -41,7 +41,7 @@
   </div>
   
   <div class="col-md-6 legal-notices">
-    <p>Copyright © [Year] [Your Name]. All Rights Reserved.</p>
+    <p>Copyright © [Year] [Your Name]. All Rights Reserved.    </p>
     <!-- Privacy Policy, Terms of Use -->
   </div>
 
