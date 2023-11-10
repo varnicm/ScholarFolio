@@ -1,59 +1,21 @@
-<footer class="container footer mt-auto bg-body-tertiary">
+<footer class="container footer mt-auto p-5 text-light ">
         <div class="row">
-            
-  <div class="col-md-2 contact-info py-3">
-    <h3>Contact Information</h4>
-    <p>[Your Full Name]</p>
-    <p><a href="mailto:[Your Email]">[Your Email]</a></p>
-    <!-- Additional contact details -->
-  </div>
-  
-  <div class="col-md-2 quick-links">
-    <h4>Quick Links</h4>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <!-- Additional quick links -->
-    </ul>
-  </div>
-  
-  <div class="col-md-2 professional-affiliations">
-    <h4>Professional Affiliations</h4>
-    <!-- List of affiliations -->
-  </div>
-  
-  
-  
-  <div class="col-md-2 social-media">
-    <h4>Connect with Me</h4>
-    <!-- Social Media Links -->
-  </div>
-  
-  <div class="col-md-2 newsletter-signup">
-    <h4>Stay Updated</h4>
-    <!-- Newsletter Form -->
-  </div>
-  
-  <div class="col-md-2 acknowledgements">
-  <h3>Acknowledgements</h3>
-    <!-- Acknowledgements -->
-  </div>
-  
-  <div class="col-md-6 legal-notices">
-    <p>Copyright © [Year] [Your Name]. All Rights Reserved.    </p>
-    <!-- Privacy Policy, Terms of Use -->
-  </div>
-
-  <div class="col-md-6 footer-credits">
-    <p>Powered by WordPress.</p>
-  </div>
-
-  </div>
+          <?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>
+            <?php dynamic_sidebar( 'footer-widget-area' ); ?>
+          <?php endif; ?>  
+ 
+        </div>
 </footer>
+<div class="container">
+<div class="row bg-dark text-light">
+    <?php if ( is_active_sidebar( 'after-footer-widget-area' ) ) : ?>
+      <?php dynamic_sidebar( 'after-footer-widget-area' ); ?>
+    <?php endif; ?>  
 
 
+  </div>
 
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

@@ -1,20 +1,19 @@
-html,
-body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 main {
     min-height:100vh
 }
+nav {
+    margin: 0 -12px !important;
+    padding: 0.15rem 0 !important;
+    background-color: #0b2846 !important;
+}
 .site-title {
-    padding:30px 0px;
+    padding:45px 0px;
     text-align: center;
 }
+.site-title a{
+    color:#fff;
+    text-decoration: none;
+}   
 #masthead {
     background-color: #103c6d;
 }
@@ -25,6 +24,15 @@ main {
 .card-post {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.08), 0 6px 20px 0 transparent;
 }
+.card-post2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.08), 0 6px 20px 0 rgba(0,0,0,.08);
+}
+.no-radius {
+    border-radius:0 !important;
+}
+  .h5, h5 {
+    font-size: 1.1rem !important;
+}
 .footer {
-    flex-shrink: 0 !important;
-  }
+    background: #103c6d !important;
+}

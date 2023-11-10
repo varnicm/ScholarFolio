@@ -11,7 +11,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(""); ?>>
+<body <?php body_class("bg-secondary-subtle"); ?>>
     <header id="masthead" class="site-header container" role="banner">
         <div class="site-branding container-fluid">
             <?php

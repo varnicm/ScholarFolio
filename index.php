@@ -3,8 +3,8 @@
 // Include the header.
 get_header();
 ?>
-<main class="flex-shrink-0 bg-secondary-subtle container pb-5">
-    <div id="content" class="container mt-4 site-content">
+<main class="container pb-5 bg-white">
+    <div id="content" class="pt-3 site-content">
         <div class="row">
 
 <!-- <div class="col-md-12">
@@ -29,10 +29,10 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
  endif; 
  ?>
     <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="card mb-3 card-post">
+    <div class="card mb-3 card-post2">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="<?php echo $image; ?>" class="img-fluid rounded-start" alt="<?php the_title(); ?>">
+                <img src="<?php echo $image; ?>" class="img-fluid" alt="<?php the_title(); ?>">
             </div> 
             <div class="col-md-8">
                 <div class="card-body">
@@ -56,14 +56,24 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     
 </div>
 <div class="col-md-3">
-<div class="card mb-3 card-post">
+<div class="card mb-3 bg-secondary-subtle card-post">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Button</a>
   </div>
 </div>
+
+<?php if ( is_active_sidebar( 'custom-sidebar' ) ) : ?>
+    <div id="sidebar" class="widget-area">
+        <?php dynamic_sidebar( 'custom-sidebar' ); ?>
+    </div>
+<?php endif; ?>
+
+
 </div>
+
+
 
 
 </div>
