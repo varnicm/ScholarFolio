@@ -1,7 +1,22 @@
+/*
+Theme Name: ScholarFolio
+Theme URI: http://moesanjari.com/scholarfolio
+Author: Moe Sanjari
+Author URI: http://moesanjari.com/
+Description: A simple portfolio for scholars
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
 main {
     min-height:100vh
 }
-nav {
+.breadcrumb {
+    font-size:12px !important
+}
+#nav1 {
     margin: 0 -12px !important;
     padding: 0.15rem 0 !important;
     background-color: #0b2846 !important;
@@ -9,6 +24,7 @@ nav {
 .site-title {
     padding:45px 0px;
     text-align: center;
+    font-size:2.5rem
 }
 .site-title a{
     color:#fff;

@@ -6,7 +6,7 @@
  
         </div>
 </footer>
-<div class="container">
+<div class="container mb-3">
 <div class="row bg-dark text-light">
     <?php if ( is_active_sidebar( 'after-footer-widget-area' ) ) : ?>
       <?php dynamic_sidebar( 'after-footer-widget-area' ); ?>

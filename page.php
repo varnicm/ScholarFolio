@@ -1,26 +1,41 @@
 <?php get_header(); ?>
+<div class="container pb-5 pt-3 bg-white">
+        <div class="row">
+        <div class="col-md-9">
+        <?php bootstrap_breadcrumb(); ?>
+    <div id="main" class="site-main ps-3" role="main">
 
-<div id="primary" class="content-area">
-    <main id="main" class-site-main" role="main">
-
-        <?php
+    <?php
         // Start the loop.
         while ( have_posts() ) : the_post();
 
-            // Include the page content template.
-            get_template_part( 'template-parts/content', 'page' );
+            // Output the page content.
+            ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <header class="entry-header">
+                    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                </header><!-- .entry-header -->
 
-            // If comments are open or there is at least one comment, load up the comment template.
-            if ( comments_open() || get_comments_number() ) :
-                comments_template();
-            endif;
+                <div class="entry-content">
+                    <?php
+                        the_content();
 
-            // End of the loop.
-        endwhile;
-        ?>
+                    ?>
+                </div><!-- .entry-content -->
 
-    </main><!-- .site-main -->
-</div><!-- .content-area -->
 
-<?php get_sidebar(); ?>
+            </article>
+        <?php endwhile; ?>
+
+    </div><!-- .site-main -->
+    </div>
+<div class="col-md-3">
+<?php if ( is_active_sidebar( 'custom-sidebar' ) ) : ?>
+    <div id="sidebar" class="widget-area">
+        <?php dynamic_sidebar( 'custom-sidebar' ); ?>
+    </div>
+<?php endif; ?>
+</div>
+</div>
+</div><!-- #main -->
 <?php get_footer(); ?>

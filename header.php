@@ -14,21 +14,15 @@
 <body <?php body_class("bg-secondary-subtle"); ?>>
     <header id="masthead" class="site-header container" role="banner">
         <div class="site-branding container-fluid">
-            <?php
-            if ( is_front_page() && is_home() ) : ?>
+
                 <h1 class="site-title">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                         <?php bloginfo( 'name' ); ?>
                     </a>
                 </h1>
-            <?php else : ?>
-                <p class="site-title">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                        <?php bloginfo( 'name' ); ?>
-                    </a>
-                </p>
+
             <?php
-            endif;
+
 
             $description = get_bloginfo( 'description', 'display' );
             if ( $description || is_customize_preview() ) : ?>
@@ -38,7 +32,7 @@
         </div><!-- .site-branding -->
 
         <!-- <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation"> -->
-        <nav class="navbar navbar-dark navbar-expand-md border-body" role="navigation">
+        <nav class="navbar navbar-dark navbar-expand-md border-body" role="navigation" id="nav1">
 
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
