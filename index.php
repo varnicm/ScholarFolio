@@ -3,8 +3,8 @@
 // Include the header.
 get_header();
 ?>
-<main class="container pb-5 bg-white">
-    <div id="content" class="pt-3 site-content">
+<main class="container pb-4 bg-white">
+    <div id="content" class="pt-2 site-content">
         <div class="row">
 
 <!-- <div class="col-md-12">
