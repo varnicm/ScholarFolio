@@ -32,7 +32,7 @@ function my_custom_footer_widgets() {
             'name' => __( 'Footer Widget Area', 'scholarfolio' ),
             'id' => 'footer-widget-area',
             'description' => __( 'Widgets added here will appear in the footer.', 'scholarfolio' ),
-            'before_widget' => '<div id="%1$s" class="col-md-2 footer-widget %2$s">',
+            'before_widget' => '<div id="%1$s" class="col footer-widget %2$s">',
             'after_widget' => '</div>',
 
         )
