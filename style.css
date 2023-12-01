@@ -22,14 +22,35 @@ main {
     background-color: #0b2846 !important;
 }
 .site-title {
-    padding:45px 0px;
+    padding:45px 0px 20px 0px;
     text-align: center;
     font-size:2.5rem
 }
 .site-title a{
     color:#fff;
     text-decoration: none;
+	font-family: 'Nunito', sans-serif;
+	font-weight:700
 }   
+.site-description {
+	color:#eee;
+	text-align:center;
+	font-family: 'Nunito', sans-serif;
+}
+.nav-link {
+		font-family: 'Nunito', sans-serif;
+		color: rgba(255,255,255,0.75) !important;
+}
+.nav-link:hover {
+		color: rgba(255,255,255,0.95) !important;
+}
+.wp-block-media-text .wp-block-media-text__content {
+    direction: ltr;
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0 2%;
+    word-break: break-word;
+}
 #masthead {
     background-color: #103c6d;
 }
